@@ -53,10 +53,10 @@ function draw() {
   let sw = 250;
   let sh = 325;
 
-  let dx = (948-200);
-  let dy = 285;
-  let dw = 350;
-  let dh = 425;
+  let dx = (948-143);
+  let dy = 246;
+  let dw = 397;
+  let dh = 501;
 
   let al =map(mouseX,0,width,0,255);
 
@@ -121,7 +121,7 @@ function linesTop() {
   
   
   
-  let CtilesX = 10;
+  let CtilesX = 12;
   let CtilesY = 6;
   
   let CtileW = width/CtilesX;
@@ -164,19 +164,19 @@ function linesTop() {
       
       rectMode(CENTER);
       rect(CENTER);
-      rect(CtileW/2+x*x1,y*y1,50-cellCenter/8,1);
-      rect(+CtileW+x*x1,+CtileH/2+y*y1,1,50+-cellCenter/8);
+      rect(CtileW/2+x*x1,y*y1,60-cellCenter/8,1);
+      rect(+CtileW+x*x1,+CtileH/2+y*y1,1,60+-cellCenter/8);
       //line(x*x1+-CtileH+(cellBottom/0),y*y1,x*x1,y*y1);
       pop();
 
       push();
 
       
-      fill(255,255,255,200-(cellCenter));
+      fill(255,255,255,250-(cellCenter*1.2));
       rectMode(CENTER);
       rect(CENTER);
-      rect(CtileW/2+x*x1,y*y1,50-cellCenter/8,4);
-      rect(+CtileW+x*x1,+CtileH/2+y*y1,4,50+-cellCenter/8);
+      rect(CtileW/2+x*x1,y*y1,60-cellCenter/8,4);
+      rect(+CtileW+x*x1,+CtileH/2+y*y1,4,60+-cellCenter/8);
       //line(x*x1+-CtileH+(cellBottom/0),y*y1,x*x1,y*y1);
       pop();
       
